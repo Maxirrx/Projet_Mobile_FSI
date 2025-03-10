@@ -34,20 +34,20 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mes informations"
+        android:text="Mes notes"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.444" />
+        app:layout_constraintVertical_bias="0.404" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="194dp"
         android:layout_height="37dp"
-        android:text="Mes informations"
+        android:text="Bilan 1"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
@@ -62,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Nom"
+        android:text="Note de l'entreprise"
         android:textAlignment="textStart"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/view"
@@ -75,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Prénom"
+        android:text="Note d'oral"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.052"
@@ -83,23 +83,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Spécialisation"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Téléphone"
+        android:text="Note du dossier"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.057"
@@ -122,35 +110,11 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Mail"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Classe"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-    <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Adresse"
+        android:text="Remarque éventuel"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.052"
@@ -186,19 +150,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="220dp"
-        android:text="TextView"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -228,32 +179,6 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="220dp"
-        android:text="TextView"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="220dp"
-        android:text="TextView"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-    <TextView
         android:id="@+id/textView153"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -266,9 +191,9 @@
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
- <!--
- suite
--->
+    <!--
+    suite
+   -->
 
 
     <View
@@ -288,7 +213,7 @@
         android:id="@+id/textView355"
         android:layout_width="326dp"
         android:layout_height="33dp"
-        android:text="Information de l'entreprise"
+        android:text="Bilan 2"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view1"
@@ -303,7 +228,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Nom de l'entreprise"
+        android:text="Note d'oral"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/view1"
         app:layout_constraintHorizontal_bias="0.053"
@@ -315,7 +240,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Adresse"
+        android:text="Note du dossier"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/view1"
         app:layout_constraintHorizontal_bias="0.052"
@@ -323,35 +248,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView1155" />
 
     <TextView
-        android:id="@+id/textView514"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Téléphone"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/view1"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="@+id/view1"
-        app:layout_constraintTop_toBottomOf="@+id/textView516" />
-
-    <TextView
-        android:id="@+id/textView515"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Mail"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/view1"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="@+id/view1"
-        app:layout_constraintTop_toBottomOf="@+id/textView514" />
-
-    <TextView
         android:id="@+id/textView516"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Nom du maître d'apprentissage"
+        android:text="Remarque éventuel"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/view1"
         app:layout_constraintHorizontal_bias="0.052"
@@ -384,32 +285,6 @@
         app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="@+id/view1"
         app:layout_constraintTop_toBottomOf="@+id/textView1155" />
-
-    <TextView
-        android:id="@+id/textView58"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="220dp"
-        android:text="TextView"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/view1"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="@+id/view1"
-        app:layout_constraintTop_toBottomOf="@+id/textView516" />
-
-    <TextView
-        android:id="@+id/textView59"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="220dp"
-        android:text="TextView"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/view1"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="@+id/view1"
-        app:layout_constraintTop_toBottomOf="@+id/textView514" />
 
     <TextView
         android:id="@+id/textView5153"
