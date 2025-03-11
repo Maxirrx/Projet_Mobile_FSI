@@ -12,6 +12,9 @@ public class PageInfo extends AppCompatActivity {
 
     private ImageButton btnburger;
 
+    private String nom_de_page;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,12 +24,16 @@ public class PageInfo extends AppCompatActivity {
     }
 
     private void initialisation(){
+
+        nom_de_page = "info";
+
         btnburger = (ImageButton) findViewById(R.id.btnburger);
 
         btnburger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(PageInfo.this, Menu.class);
+                intent.putExtra("page_preced", nom_de_page);
                 startActivity(intent);
             }
         });
