@@ -44,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
         UtilisateurDAO utilisateurDAO = new UtilisateurDAO(this);
         utilisateurDAO.open();
 
+        if(utilisateurDAO.getsoloUtilisateur() != null){
+            Intent intent = new Intent(MainActivity.this, PageAcceuil.class);
+            startActivity(intent);
+
+        }
+
         btnconnect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
                     return;
                 }else {
+                    Log.d("sqdfjmqsdf", "qsdfhqsd");
 
 
                     RetroFitClientUtilisateur.getInstance()
@@ -66,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                                 public void onResponse(Call<Utilisateur> call, retrofit2.Response<Utilisateur> response) {
                                     if (response.isSuccessful() && response.body() != null) {
                                         Utilisateur utilisateur = response.body();
+
 
                                         utilisateurDAO.insertuser(utilisateur);
 
@@ -90,12 +98,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-                Intent intent = new Intent(MainActivity.this, PageAcceuil.class);
-                startActivity(intent);
-
-            }else{
-                    Intent intent = new Intent(MainActivity.this, PageAcceuil.class);
-                    startActivity(intent);
             }
             }
         });

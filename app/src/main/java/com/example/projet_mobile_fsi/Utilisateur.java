@@ -21,7 +21,7 @@ public class Utilisateur {
         private int noteOralBil1;
         private String dateBil1;
 
-    public Utilisateur(int anInt, String string, String cursorString, String adresseUti, String mailUti, String nomMA, String prenomMA, String telMA, String mailMA, String telEnt, String adresseEnt, String nomEnt, String libBil1, String mailEnt, int cursorInt, int noteEntBil1, int i, int noteOralBil1, String dateBil1, String libBil2, int noteOralBil2, int noteBil2, String sujMemoire, String dateBil2) {
+    public Utilisateur() {
 
     }
 

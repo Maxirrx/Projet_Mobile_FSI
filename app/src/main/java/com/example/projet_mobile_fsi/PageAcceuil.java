@@ -37,7 +37,8 @@ public class PageAcceuil extends AppCompatActivity {
         utilisateurDAO.open();
 
 
-        textView2.setText("Bonjour " + utilisateurDAO.getsoloUtilisateur().getPrenomUti());
+
+        textView2.setText("Bonjour " + String.valueOf(utilisateurDAO.getsoloUtilisateur().getPrenomUti()));
 
         btnburger.setOnClickListener(new View.OnClickListener() {
             @Override

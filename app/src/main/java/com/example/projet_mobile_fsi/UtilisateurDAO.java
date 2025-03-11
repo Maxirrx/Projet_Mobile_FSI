@@ -60,26 +60,27 @@ public class UtilisateurDAO {
         return utilisateur;
     }
 
-    public Utilisateur getsoloUtilisateur(){
+    public Utilisateur getsoloUtilisateur() {
         Utilisateur unutilsateur = null;
-        Cursor cursor = sqLiteDatabase.query(true, "Utilisateur", new String[]{"id", "nomUti", "prenomUti", "adresseUti", "mailUti", "nomMA", "prenomMA", "telMA", "mailMA", "nomEnt", "adresseEnt", "telEnt", "mailEnt", "libBil1", "notBil1", "remarqueBil1", "noteEntBil1", "noteOralBil1", "dateBil1", "libBil2", "noteBil2", "noteOralBil2", "sujMemoire", "dateBil2"}, null , null,null,null,null,null);
-        if(cursor.moveToNext()) {
-            while (cursor.moveToNext()) {
-                unutilsateur = cursorToUtilisateur(cursor);
-            }
-        }else{
-            return null;
+
+        Cursor cursor = sqLiteDatabase.query(true, "Utilisateur", new String[]{"id", "nomUti", "prenomUti", "adresseUti", "mailUti", "nomMA", "prenomMA", "telMA", "mailMA", "nomEnt", "adresseEnt", "telEnt", "mailEnt", "libBil1", "notBil1", "remarqueBil1", "noteEntBil1", "noteOralBil1", "dateBil1", "libBil2", "noteBil2", "noteOralBil2", "sujMemoire", "dateBil2"}, null, null, null, null, null, "1" // LIMIT 1 pour récupérer un seul utilisateur
+        );
+
+        if (cursor.moveToFirst()) {
+            unutilsateur = cursorToUtilisateur(cursor);
         }
+
         cursor.close();
         return unutilsateur;
     }
+
 
     public void deleteUtilisateur(){
         sqLiteDatabase.delete("Utilisateur", null, null);
     }
 
     private Utilisateur cursorToUtilisateur(Cursor cursor) {
-        Utilisateur cursorutilsateur = new Utilisateur(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), cursor.getString(5), cursor.getString(6), cursor.getString(7), cursor.getString(8), cursor.getString(9), cursor.getString(10), cursor.getString(11), cursor.getString(12), cursor.getString(13), cursor.getInt(14), cursor.getInt(15), cursor.getInt(16), cursor.getInt(17), cursor.getString(18), cursor.getString(19), cursor.getInt(20), cursor.getInt(21), cursor.getString(22), cursor.getString(23));
+        Utilisateur cursorutilsateur = new Utilisateur(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), cursor.getString(5), cursor.getString(6), cursor.getString(7), cursor.getString(8), cursor.getString(9), cursor.getString(10), cursor.getString(11), cursor.getString(12), cursor.getString(13), cursor.getInt(14), cursor.getInt(15), cursor.getString(16), cursor.getInt(17), cursor.getString(18), cursor.getString(19), cursor.getInt(20), cursor.getInt(21), cursor.getString(22), cursor.getString(23));
         return cursorutilsateur;
     }
 }
