@@ -67,6 +67,11 @@ public class Menu extends AppCompatActivity {
         btndeco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                UtilisateurDAO utilisateurDAO = new UtilisateurDAO(Menu.this);
+                utilisateurDAO.open();
+                utilisateurDAO.deleteUtilisateur();
+                utilisateurDAO.close();
                 Intent intent = new Intent(Menu.this, MainActivity.class);
                 startActivity(intent);
             }
