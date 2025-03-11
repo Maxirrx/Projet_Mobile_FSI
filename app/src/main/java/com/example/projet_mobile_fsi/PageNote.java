@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class PageNote extends AppCompatActivity {
 
     private ImageButton btnburger;
+    private String nom_de_page;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,12 +24,16 @@ public class PageNote extends AppCompatActivity {
     }
 
     private void initialisation(){
+
+        nom_de_page = "note";
+
         btnburger = (ImageButton) findViewById(R.id.btnburger);
 
         btnburger.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(PageNote.this, Menu.class);
+                intent.putExtra("page_preced", nom_de_page);
                 startActivity(intent);
             }
         });
