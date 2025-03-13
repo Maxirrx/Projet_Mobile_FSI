@@ -304,7 +304,7 @@
         android:layout_width="361dp"
         android:layout_height="232dp"
         android:layout_marginTop="450dp"
-        android:background="#ADD5AD"
+        android:background="@drawable/rounded_background_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.54"
