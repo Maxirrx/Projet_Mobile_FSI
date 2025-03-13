@@ -3,6 +3,7 @@ package com.example.projet_mobile_fsi;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -24,7 +25,7 @@ public class PageInfo extends AppCompatActivity {
     private TextView nommaitre;
     private TextView telmaitre;
     private TextView mailmaitre;
-
+    private Button btnmodif;
     private String nom_de_page;
 
 
@@ -39,7 +40,7 @@ public class PageInfo extends AppCompatActivity {
     private void initialisation(){
 
         nom_de_page = "info";
-
+        btnmodif = (Button) findViewById(R.id.btnmodif);
         btnburger = (ImageButton) findViewById(R.id.btnburger);
         nom = (TextView) findViewById(R.id.nom);
         prenom = (TextView) findViewById(R.id.prenom);
@@ -80,6 +81,14 @@ public class PageInfo extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(PageInfo.this, Menu.class);
                 intent.putExtra("page_preced", nom_de_page);
+                startActivity(intent);
+            }
+        });
+
+        btnmodif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PageInfo.this, Pagemodif.class);
                 startActivity(intent);
             }
         });

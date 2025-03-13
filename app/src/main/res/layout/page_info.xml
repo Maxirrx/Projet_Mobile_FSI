@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     android:background="#E9F6E9">
 
+    <Button
+        android:id="@+id/btnmodif"
+        android:layout_width="145dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#203C25"
+        android:text="Modifier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:rippleColor="#FFFFFF" />
+
     <ImageButton
         android:id="@+id/btnburger"
         android:layout_width="70dp"

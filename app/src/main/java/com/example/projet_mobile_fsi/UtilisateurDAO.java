@@ -80,7 +80,7 @@ public class UtilisateurDAO {
     }
 
     private Utilisateur cursorToUtilisateur(Cursor cursor) {
-        Utilisateur cursorutilsateur = new Utilisateur(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), cursor.getString(5), cursor.getString(6), cursor.getString(7), cursor.getString(8), cursor.getString(9), cursor.getString(10), cursor.getString(11), cursor.getString(12), cursor.getString(13), cursor.getInt(14), cursor.getInt(15), cursor.getString(16), cursor.getInt(17), cursor.getString(18), cursor.getString(19), cursor.getInt(20), cursor.getInt(21), cursor.getString(22), cursor.getString(23));
+        Utilisateur cursorutilsateur = new Utilisateur(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getString(3), cursor.getString(4), cursor.getString(5), cursor.getString(6), cursor.getString(7), cursor.getString(8), cursor.getString(9), cursor.getString(10), cursor.getString(11), cursor.getString(12), cursor.getString(13), cursor.getInt(14), cursor.getString(15), cursor.getDouble(16), cursor.getDouble(17), cursor.getString(18), cursor.getString(19), cursor.getDouble(20), cursor.getInt(21), cursor.getString(22), cursor.getString(23));
         return cursorutilsateur;
     }
 }

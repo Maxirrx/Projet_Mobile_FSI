@@ -15,17 +15,22 @@ public class Utilisateur {
         private String telEnt;
         private String mailEnt;
         private String libBil1;
-        private int notBil1;
+        private double notBil1;
         private String remarqueBil1;
-        private int noteEntBil1;
-        private int noteOralBil1;
+        private double noteEntBil1;
+        private double noteOralBil1;
         private String dateBil1;
+        private String libBil2;
+        private double noteBil2;
+        private double noteOralBil2;
+        private String sujMemoire;
+        private String dateBil2;
 
-    public Utilisateur() {
+        public Utilisateur() {
 
     }
 
-    public Utilisateur(int id, String nomUti, String prenomUti, String adresseUti, String mailUti, String nomMA, String prenomMA, String telMA, String mailMA, String telEnt, String adresseEnt, String nomEnt, String libBil1, String mailEnt, int notBil1, int noteEntBil1, String remarqueBil1, int noteOralBil1, String dateBil1, String libBil2, int noteOralBil2, int noteBil2, String sujMemoire, String dateBil2) {
+    public Utilisateur(int id, String nomUti, String prenomUti, String adresseUti, String mailUti, String nomMA, String prenomMA,  String telMA, String mailMA, String nomEnt, String adresseEnt, String telEnt,String mailEnt,  String libBil1, double notBil1, String remarqueBil1, double noteEntBil1, double noteOralBil1, String dateBil1, String libBil2, double noteBil2, double noteOralBil2, String sujMemoire, String dateBil2) {
         this.id = id;
         this.nomUti = nomUti;
         this.prenomUti = prenomUti;
@@ -35,19 +40,19 @@ public class Utilisateur {
         this.prenomMA = prenomMA;
         this.telMA = telMA;
         this.mailMA = mailMA;
-        this.telEnt = telEnt;
-        this.adresseEnt = adresseEnt;
         this.nomEnt = nomEnt;
-        this.libBil1 = libBil1;
+        this.adresseEnt = adresseEnt;
+        this.telEnt = telEnt;
         this.mailEnt = mailEnt;
+        this.libBil1 = libBil1;
         this.notBil1 = notBil1;
-        this.noteEntBil1 = noteEntBil1;
         this.remarqueBil1 = remarqueBil1;
+        this.noteEntBil1 = noteEntBil1;
         this.noteOralBil1 = noteOralBil1;
         this.dateBil1 = dateBil1;
         this.libBil2 = libBil2;
-        this.noteOralBil2 = noteOralBil2;
         this.noteBil2 = noteBil2;
+        this.noteOralBil2 = noteOralBil2;
         this.sujMemoire = sujMemoire;
         this.dateBil2 = dateBil2;
     }
@@ -58,22 +63,6 @@ public class Utilisateur {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getNomMA() {
-        return nomMA;
-    }
-
-    public void setNomMA(String nomMA) {
-        this.nomMA = nomMA;
-    }
-
-    public String getTelMA() {
-        return telMA;
-    }
-
-    public void setTelMA(String telMA) {
-        this.telMA = telMA;
     }
 
     public String getNomUti() {
@@ -108,12 +97,28 @@ public class Utilisateur {
         this.mailUti = mailUti;
     }
 
+    public String getNomMA() {
+        return nomMA;
+    }
+
+    public void setNomMA(String nomMA) {
+        this.nomMA = nomMA;
+    }
+
     public String getPrenomMA() {
         return prenomMA;
     }
 
     public void setPrenomMA(String prenomMA) {
         this.prenomMA = prenomMA;
+    }
+
+    public String getTelMA() {
+        return telMA;
+    }
+
+    public void setTelMA(String telMA) {
+        this.telMA = telMA;
     }
 
     public String getNomEnt() {
@@ -132,14 +137,6 @@ public class Utilisateur {
         this.mailMA = mailMA;
     }
 
-    public String getMailEnt() {
-        return mailEnt;
-    }
-
-    public void setMailEnt(String mailEnt) {
-        this.mailEnt = mailEnt;
-    }
-
     public String getAdresseEnt() {
         return adresseEnt;
     }
@@ -156,20 +153,20 @@ public class Utilisateur {
         this.telEnt = telEnt;
     }
 
+    public String getMailEnt() {
+        return mailEnt;
+    }
+
+    public void setMailEnt(String mailEnt) {
+        this.mailEnt = mailEnt;
+    }
+
     public String getLibBil1() {
         return libBil1;
     }
 
     public void setLibBil1(String libBil1) {
         this.libBil1 = libBil1;
-    }
-
-    public int getNotBil1() {
-        return notBil1;
-    }
-
-    public void setNotBil1(int notBil1) {
-        this.notBil1 = notBil1;
     }
 
     public String getRemarqueBil1() {
@@ -180,28 +177,28 @@ public class Utilisateur {
         this.remarqueBil1 = remarqueBil1;
     }
 
-    public int getNoteEntBil1() {
+    public double getNotBil1() {
+        return notBil1;
+    }
+
+    public void setNotBil1(double notBil1) {
+        this.notBil1 = notBil1;
+    }
+
+    public double getNoteEntBil1() {
         return noteEntBil1;
     }
 
-    public void setNoteEntBil1(int noteEntBil1) {
+    public void setNoteEntBil1(double noteEntBil1) {
         this.noteEntBil1 = noteEntBil1;
     }
 
-    public int getNoteOralBil1() {
+    public double getNoteOralBil1() {
         return noteOralBil1;
     }
 
-    public void setNoteOralBil1(int noteOralBil1) {
+    public void setNoteOralBil1(double noteOralBil1) {
         this.noteOralBil1 = noteOralBil1;
-    }
-
-    public String getDateBil1() {
-        return dateBil1;
-    }
-
-    public void setDateBil1(String dateBil1) {
-        this.dateBil1 = dateBil1;
     }
 
     public String getLibBil2() {
@@ -212,19 +209,27 @@ public class Utilisateur {
         this.libBil2 = libBil2;
     }
 
-    public int getNoteBil2() {
+    public String getDateBil1() {
+        return dateBil1;
+    }
+
+    public void setDateBil1(String dateBil1) {
+        this.dateBil1 = dateBil1;
+    }
+
+    public double getNoteBil2() {
         return noteBil2;
     }
 
-    public void setNoteBil2(int noteBil2) {
+    public void setNoteBil2(double noteBil2) {
         this.noteBil2 = noteBil2;
     }
 
-    public int getNoteOralBil2() {
+    public double getNoteOralBil2() {
         return noteOralBil2;
     }
 
-    public void setNoteOralBil2(int noteOralBil2) {
+    public void setNoteOralBil2(double noteOralBil2) {
         this.noteOralBil2 = noteOralBil2;
     }
 
@@ -243,11 +248,4 @@ public class Utilisateur {
     public void setDateBil2(String dateBil2) {
         this.dateBil2 = dateBil2;
     }
-
-    private String libBil2;
-        private int noteBil2;
-        private int noteOralBil2;
-        private String sujMemoire;
-        private String dateBil2;
-
 }
