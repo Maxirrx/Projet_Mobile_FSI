@@ -2,6 +2,7 @@ package com.example.projet_mobile_fsi;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -67,6 +68,11 @@ public class Menu extends AppCompatActivity {
         btndeco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                UtilisateurDAO utilisateurDAO = new UtilisateurDAO(Menu.this);
+                utilisateurDAO.open();
+                utilisateurDAO.deleteUtilisateur();
+                utilisateurDAO.close();
                 Intent intent = new Intent(Menu.this, MainActivity.class);
                 startActivity(intent);
             }

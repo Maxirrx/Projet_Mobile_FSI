@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     android:background="#E9F6E9">
 
+    <Button
+        android:id="@+id/btnmodif"
+        android:layout_width="145dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#203C25"
+        android:text="Modifier"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.913"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:rippleColor="#FFFFFF" />
+
     <ImageButton
         android:id="@+id/btnburger"
         android:layout_width="70dp"
@@ -174,7 +188,7 @@
 
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/nom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -187,7 +201,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/prenom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -200,7 +214,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/spe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -213,7 +227,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/telephone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -242,7 +256,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/mail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -255,7 +269,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/classe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -268,7 +282,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
-        android:id="@+id/textView153"
+        android:id="@+id/adresse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -374,7 +388,7 @@
 
 
     <TextView
-        android:id="@+id/textView54"
+        android:id="@+id/noment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="220dp"
@@ -387,7 +401,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView355" />
 
     <TextView
-        android:id="@+id/textView56"
+        android:id="@+id/adresseent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -400,7 +414,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView1155" />
 
     <TextView
-        android:id="@+id/textView58"
+        android:id="@+id/telmaitre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -413,7 +427,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView516" />
 
     <TextView
-        android:id="@+id/textView59"
+        android:id="@+id/mailmaitre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -426,7 +440,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView514" />
 
     <TextView
-        android:id="@+id/textView5153"
+        android:id="@+id/nommaitre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"

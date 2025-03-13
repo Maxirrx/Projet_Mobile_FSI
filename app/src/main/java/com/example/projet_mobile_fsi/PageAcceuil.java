@@ -2,8 +2,10 @@ package com.example.projet_mobile_fsi;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +14,7 @@ public class PageAcceuil extends AppCompatActivity {
 
     private ImageButton btnburger;
     private String nom_de_page;
+    private TextView textView2;
 
 
 
@@ -28,6 +31,14 @@ public class PageAcceuil extends AppCompatActivity {
         nom_de_page = "acceuil";
 
         btnburger = (ImageButton) findViewById(R.id.btnburger);
+        textView2 = (TextView) findViewById(R.id.textView2);
+
+        UtilisateurDAO utilisateurDAO = new UtilisateurDAO(this);
+        utilisateurDAO.open();
+
+
+
+        textView2.setText("Bonjour " + String.valueOf(utilisateurDAO.getsoloUtilisateur().getPrenomUti()));
 
         btnburger.setOnClickListener(new View.OnClickListener() {
             @Override

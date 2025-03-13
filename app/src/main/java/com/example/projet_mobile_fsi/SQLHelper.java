@@ -9,7 +9,7 @@ import android.util.Log;
 
 public class SQLHelper extends SQLiteOpenHelper {
 
-    public static final String TABLE_COMMENT = "Etudiant";
+    public static final String TABLE_COMMENT = "Utilisateur";
     private static final String DB_NAME = "FSI.db";
     private static final int DB_VERSION = 1;
 
@@ -28,14 +28,14 @@ public class SQLHelper extends SQLiteOpenHelper {
             "telEnt TEXT, " +
             "mailEnt TEXT, " +
             "libBil1 TEXT, " +
-            "notBil1 TEXT, " +
+            "notBil1 INTEGER, " +
             "remarqueBil1 TEXT, " +
-            "noteEntBil1 TEXT, " +
-            "noteOralBil1 TEXT, " +
+            "noteEntBil1 INTEGER, " +
+            "noteOralBil1 INTEGER, " +
             "dateBil1 TEXT, " +
             "libBil2 TEXT, " +
-            "noteBil2 TEXT, " +
-            "noteOralBil2 TEXT, " +
+            "noteBil2 INTEGER, " +
+            "noteOralBil2 INTEGER, " +
             "sujMemoire TEXT, " +
             "dateBil2 TEXT );";
 
