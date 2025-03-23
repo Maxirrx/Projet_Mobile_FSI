@@ -37,9 +37,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initialisation(){
+
         btnconnect = (Button) findViewById(R.id.btnconnect);
         login = (EditText) findViewById(R.id.login);
         mdp = (EditText) findViewById(R.id.mdp);
+
 
         UtilisateurDAO utilisateurDAO = new UtilisateurDAO(this);
         utilisateurDAO.open();
@@ -62,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
                     return;
                 }else {
-                    Log.d("sqdfjmqsdf", "qsdfhqsd");
+
 
 
                     RetroFitClientUtilisateur.getInstance()

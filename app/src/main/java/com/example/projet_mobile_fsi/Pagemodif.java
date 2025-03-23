@@ -64,9 +64,9 @@ public class Pagemodif extends AppCompatActivity {
 
         nom.setText(utilisateur.getNomUti());
         prenom.setText(utilisateur.getPrenomUti());
-        telephone.setText(String.valueOf(utilisateur.getTelMA()));
-        adresse.setText(String.valueOf(utilisateur.getAdresseUti()));
-        mail.setText(String.valueOf(utilisateur.getMailUti()));
+        telephone.setText("vide".equals(String.valueOf(utilisateur.getTelMA())) ? " " : String.valueOf(utilisateur.getTelMA()));
+        adresse.setText( "vide".equals(String.valueOf(utilisateur.getAdresseUti())) ? " " : String.valueOf(utilisateur.getAdresseUti()));
+        mail.setText("vide".equals(String.valueOf(utilisateur.getMailUti())) ? " " : String.valueOf(utilisateur.getMailUti()) );
         classe.setText(utilisateur.getLibBil1());
 
 

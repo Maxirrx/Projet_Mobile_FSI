@@ -19,7 +19,6 @@ public class PageInfo extends AppCompatActivity {
     private TextView adresse;
     private TextView mail;
     private TextView classe;
-    private TextView spe;
     private TextView noment;
     private TextView adresseent;
     private TextView nommaitre;
@@ -48,7 +47,6 @@ public class PageInfo extends AppCompatActivity {
         adresse = (TextView) findViewById(R.id.adresse);
         mail = (TextView) findViewById(R.id.mail);
         classe = (TextView) findViewById(R.id.classe);
-        spe = (TextView) findViewById(R.id.spe);
         noment = (TextView) findViewById(R.id.noment);
         adresseent = (TextView) findViewById(R.id.adresseent);
         nommaitre = (TextView) findViewById(R.id.nommaitre);
@@ -60,18 +58,17 @@ public class PageInfo extends AppCompatActivity {
         Utilisateur utilisateur = utilisateurDAO.getsoloUtilisateur();
 
 
-        nom.setText(utilisateur.getNomUti());
-        prenom.setText(utilisateur.getPrenomUti());
-        telephone.setText(utilisateur.getTelMA());
-        adresse.setText(utilisateur.getAdresseUti());
-        mail.setText(utilisateur.getMailUti());
-        classe.setText(utilisateur.getLibBil1());
-        spe.setText(utilisateur.getLibBil2());
-        noment.setText(utilisateur.getNomEnt());
-        adresseent.setText(utilisateur.getAdresseEnt());
-        nommaitre.setText(utilisateur.getNomMA());
-        telmaitre.setText(utilisateur.getTelMA());
-        mailmaitre.setText(utilisateur.getMailMA());
+        nom.setText(utilisateur.getNomUti() != null ? utilisateur.getNomUti() : "");
+        prenom.setText(utilisateur.getPrenomUti() != null ? utilisateur.getPrenomUti() : "");
+        telephone.setText(utilisateur.getTelMA() != null ? utilisateur.getTelMA() : "");
+        adresse.setText(utilisateur.getAdresseUti() != null ? utilisateur.getAdresseUti() : "");
+        mail.setText(utilisateur.getMailUti() != null ? utilisateur.getMailUti() : "");
+        classe.setText(utilisateur.getLibBil1() != null ? utilisateur.getLibBil1() : "");
+        noment.setText(utilisateur.getNomEnt() != null ? utilisateur.getNomEnt() : "");
+        adresseent.setText(utilisateur.getAdresseEnt() != null ? utilisateur.getAdresseEnt() : "");
+        nommaitre.setText(utilisateur.getNomMA() != null ? utilisateur.getNomMA() : "");
+        telmaitre.setText(utilisateur.getTelMA() != null ? utilisateur.getTelMA() : "");
+        mailmaitre.setText(utilisateur.getMailMA() != null ? utilisateur.getMailMA() : "");
 
 
 
