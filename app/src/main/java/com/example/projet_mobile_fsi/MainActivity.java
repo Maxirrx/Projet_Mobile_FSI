@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Veuillez remplir tous les champs", Toast.LENGTH_SHORT).show();
                     return;
                 }else {
-                    Log.d("sqdfjmqsdf", "qsdfhqsd");
+
 
 
                     RetroFitClientUtilisateur.getInstance()
