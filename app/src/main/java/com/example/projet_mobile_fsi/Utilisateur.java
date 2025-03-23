@@ -20,7 +20,7 @@ public class Utilisateur {
         private double noteEntBil1;
         private double noteOralBil1;
         private String dateBil1;
-        private String libBil2;
+        private String maclasse;
         private double noteBil2;
         private double noteOralBil2;
         private String sujMemoire;
@@ -30,7 +30,7 @@ public class Utilisateur {
 
     }
 
-    public Utilisateur(int id, String nomUti, String prenomUti, String adresseUti, String mailUti, String nomMA, String prenomMA,  String telMA, String mailMA, String nomEnt, String adresseEnt, String telEnt,String mailEnt,  String libBil1, double notBil1, String remarqueBil1, double noteEntBil1, double noteOralBil1, String dateBil1, String libBil2, double noteBil2, double noteOralBil2, String sujMemoire, String dateBil2) {
+    public Utilisateur(int id, String nomUti, String prenomUti, String adresseUti, String mailUti, String nomMA, String prenomMA,  String telMA, String mailMA, String nomEnt, String adresseEnt, String telEnt,String mailEnt,  String libBil1, double notBil1, String remarqueBil1, double noteEntBil1, double noteOralBil1, String dateBil1, String maclasse, double noteBil2, double noteOralBil2, String sujMemoire, String dateBil2) {
         this.id = id;
         this.nomUti = nomUti;
         this.prenomUti = prenomUti;
@@ -50,7 +50,7 @@ public class Utilisateur {
         this.noteEntBil1 = noteEntBil1;
         this.noteOralBil1 = noteOralBil1;
         this.dateBil1 = dateBil1;
-        this.libBil2 = libBil2;
+        this.maclasse = maclasse;
         this.noteBil2 = noteBil2;
         this.noteOralBil2 = noteOralBil2;
         this.sujMemoire = sujMemoire;
@@ -201,12 +201,12 @@ public class Utilisateur {
         this.noteOralBil1 = noteOralBil1;
     }
 
-    public String getLibBil2() {
-        return libBil2;
+    public String getmaclasse() {
+        return maclasse;
     }
 
-    public void setLibBil2(String libBil2) {
-        this.libBil2 = libBil2;
+    public void setmaclasse(String maclasse) {
+        this.maclasse = maclasse;
     }
 
     public String getDateBil1() {
