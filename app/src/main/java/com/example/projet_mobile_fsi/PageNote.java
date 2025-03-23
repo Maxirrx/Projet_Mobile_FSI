@@ -49,13 +49,13 @@ public class PageNote extends AppCompatActivity {
         utilisateurDAO.open();
         Utilisateur utilisateur = utilisateurDAO.getsoloUtilisateur();
 
-        notoral1.setText(String.valueOf(utilisateur.getNoteOralBil1()));
-        notoral2.setText(String.valueOf(utilisateur.getNoteOralBil2()));
-        noteent.setText(String.valueOf(utilisateur.getNoteEntBil1()));
-        notedoss1.setText(String.valueOf(utilisateur.getNotBil1()));
-        notedoss2.setText(String.valueOf(utilisateur.getNoteBil2()));
-        remarque1.setText(utilisateur.getRemarqueBil1() != null ? utilisateur.getRemarqueBil1() : "Aucune remarque");
-        remarque2.setText(utilisateur.getSujMemoire() != null ? utilisateur.getSujMemoire() : "Aucun sujet mémoire");
+        notoral1.setText(String.valueOf(utilisateur.getNoteOralBil1() != 0.0 ? utilisateur.getNoteOralBil1() : ""));
+        notoral2.setText(String.valueOf(utilisateur.getNoteOralBil2()!= 0.0 ? utilisateur.getNoteOralBil2() : ""));
+        noteent.setText(String.valueOf(utilisateur.getNoteEntBil1()!= 0.0 ? utilisateur.getNoteEntBil1() : ""));
+        notedoss1.setText(String.valueOf(utilisateur.getNotBil1()!= 0.0 ? utilisateur.getNotBil1() : ""));
+        notedoss2.setText(String.valueOf(utilisateur.getNoteBil2()!= 0.0 ? utilisateur.getNoteBil2() : ""));
+        remarque1.setText(utilisateur.getRemarqueBil1() != null ? utilisateur.getRemarqueBil1() : "");
+        remarque2.setText(utilisateur.getSujMemoire() != null ? utilisateur.getSujMemoire() : "");
 
         btnburger.setOnClickListener(new View.OnClickListener() {
             @Override

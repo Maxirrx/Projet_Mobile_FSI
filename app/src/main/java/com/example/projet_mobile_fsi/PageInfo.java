@@ -58,17 +58,17 @@ public class PageInfo extends AppCompatActivity {
         Utilisateur utilisateur = utilisateurDAO.getsoloUtilisateur();
 
 
-        nom.setText(utilisateur.getNomUti() != null ? utilisateur.getNomUti() : "");
-        prenom.setText(utilisateur.getPrenomUti() != null ? utilisateur.getPrenomUti() : "");
-        telephone.setText(utilisateur.getTelMA() != null ? utilisateur.getTelMA() : "");
-        adresse.setText(utilisateur.getAdresseUti() != null ? utilisateur.getAdresseUti() : "");
-        mail.setText(utilisateur.getMailUti() != null ? utilisateur.getMailUti() : "");
-        classe.setText(utilisateur.getLibBil1() != null ? utilisateur.getLibBil1() : "");
-        noment.setText(utilisateur.getNomEnt() != null ? utilisateur.getNomEnt() : "");
-        adresseent.setText(utilisateur.getAdresseEnt() != null ? utilisateur.getAdresseEnt() : "");
-        nommaitre.setText(utilisateur.getNomMA() != null ? utilisateur.getNomMA() : "");
-        telmaitre.setText(utilisateur.getTelMA() != null ? utilisateur.getTelMA() : "");
-        mailmaitre.setText(utilisateur.getMailMA() != null ? utilisateur.getMailMA() : "");
+        nom.setText(!utilisateur.getNomUti().equals("vide") ? utilisateur.getNomUti() : "");
+        prenom.setText(!utilisateur.getPrenomUti().equals("vide") ? utilisateur.getPrenomUti() : "");
+        telephone.setText(!utilisateur.getTelMA().equals("vide") ? utilisateur.getTelMA() : "");
+        adresse.setText(!utilisateur.getAdresseUti().equals("vide") ? utilisateur.getAdresseUti() : "");
+        mail.setText(!utilisateur.getMailUti().equals("vide") ? utilisateur.getMailUti() : "");
+        classe.setText(!utilisateur.getmaclasse().equals("vide") ? utilisateur.getmaclasse() : "");
+        noment.setText(!utilisateur.getNomEnt().equals("vide") ? utilisateur.getNomEnt() : "");
+        adresseent.setText(!utilisateur.getAdresseEnt().equals("vide") ? utilisateur.getAdresseEnt() : "");
+        nommaitre.setText(!utilisateur.getNomMA().equals("vide") ? utilisateur.getNomMA() : "");
+        telmaitre.setText(!utilisateur.getTelEnt().equals("vide") ? utilisateur.getTelEnt() : "");
+        mailmaitre.setText(!utilisateur.getMailMA().equals("vide") ? utilisateur.getMailMA() : "");
 
 
 

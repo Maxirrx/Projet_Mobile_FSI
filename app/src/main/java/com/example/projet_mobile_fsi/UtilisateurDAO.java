@@ -43,13 +43,13 @@ public class UtilisateurDAO {
         values.put("adresseEnt", utilisateur.getAdresseEnt());
         values.put("telEnt", utilisateur.getTelEnt());
         values.put("mailEnt", utilisateur.getMailEnt());
+        values.put("maclasse", utilisateur.getmaclasse());
         values.put("libBil1", utilisateur.getLibBil1());
         values.put("notBil1", utilisateur.getNotBil1());
         values.put("remarqueBil1", utilisateur.getRemarqueBil1());
         values.put("noteEntBil1", utilisateur.getNoteEntBil1());
         values.put("noteOralBil1", utilisateur.getNoteOralBil1());
         values.put("dateBil1", utilisateur.getDateBil1());
-        values.put("libBil2", utilisateur.getLibBil2());
         values.put("noteBil2", utilisateur.getNoteBil2());
         values.put("noteOralBil2", utilisateur.getNoteOralBil2());
         values.put("sujMemoire", utilisateur.getSujMemoire());
@@ -63,7 +63,7 @@ public class UtilisateurDAO {
     public Utilisateur getsoloUtilisateur() {
         Utilisateur unutilsateur = null;
 
-        Cursor cursor = sqLiteDatabase.query(true, "Utilisateur", new String[]{"id", "nomUti", "prenomUti", "adresseUti", "mailUti", "nomMA", "prenomMA", "telMA", "mailMA", "nomEnt", "adresseEnt", "telEnt", "mailEnt", "libBil1", "notBil1", "remarqueBil1", "noteEntBil1", "noteOralBil1", "dateBil1", "libBil2", "noteBil2", "noteOralBil2", "sujMemoire", "dateBil2"}, null, null, null, null, null, "1" // LIMIT 1 pour récupérer un seul utilisateur
+        Cursor cursor = sqLiteDatabase.query(true, "Utilisateur", new String[]{"id", "nomUti", "prenomUti", "adresseUti", "mailUti", "nomMA", "prenomMA", "telMA", "mailMA", "nomEnt", "adresseEnt", "telEnt", "mailEnt", "libBil1", "notBil1", "remarqueBil1", "noteEntBil1", "noteOralBil1", "dateBil1", "maclasse", "noteBil2", "noteOralBil2", "sujMemoire", "dateBil2"}, null, null, null, null, null, "1" // LIMIT 1 pour récupérer un seul utilisateur
         );
 
         if (cursor.moveToFirst()) {
